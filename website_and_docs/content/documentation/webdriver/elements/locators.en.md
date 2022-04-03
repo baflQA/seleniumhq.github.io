@@ -197,21 +197,21 @@ You can also chain locators if needed. Sometimes the element is most easily iden
 
 {{< tabpane langEqualsHeader=true >}}
 {{< tab header="Java" >}}
-By submitLocator = RelativeLocator.with(By.tagName("button")).below(By.id("email").toRightOf(By.id("cancel"));
+By submitLocator = RelativeLocator.with(By.tagName("button")).below(By.id("email")).toRightOf(By.id("cancel"));
 {{< /tab >}}
 {{< tab header="Python" >}}
 submit_locator = locate_with(By.TAG_NAME, "button").below({By.ID: "email"}.to_right_of({By.ID: "cancel"})
 {{< /tab >}}
 {{< tab header="CSharp" >}}
-var submitLocator = RelativeBy.WithLocator(By.tagName("button"))Below(By.Id("email").RightOf(By.Id("cancel"));
+var submitLocator = RelativeBy.WithLocator(By.tagName("button"))Below(By.Id("email")).RightOf(By.Id("cancel"));
 {{< /tab >}}
 {{< tab header="Ruby" >}}
 submit_locator = {relative: {tag_name: 'button', below: {id: 'email'}, right: {id: 'cancel'}}}
 {{< /tab >}}
 {{< tab header="JavaScript" >}}
-let submitLocator = locateWith(By.tagName('button')).below(By.id('email').toRightOf(By.id('cancel')));
+let submitLocator = locateWith(By.tagName('button')).below(By.id('email')(.toRightOf(By.id('cancel')));
 {{< /tab >}}
 {{< tab header="Kotlin" >}}
-val submitLocator = RelativeLocator.with(By.tagName("button")).below(By.id("email").toRightOf(By.id("cancel")))
+val submitLocator = RelativeLocator.with(By.tagName("button")).below(By.id("email")).toRightOf(By.id("cancel")))
 {{< /tab >}}
 {{< /tabpane >}}
